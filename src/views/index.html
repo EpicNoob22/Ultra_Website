@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra Website ✨ - The Most Beautiful Site Ever</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    <div class="stars"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">Ultra</span>
+      </a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#posts" class="nav-link">Posts</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">🚀</span>
+        <span>Ultra Cool Website</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">The Most</span>
+        <span class="title-line gradient-text">Beautiful</span>
+        <span class="title-line">Website Ever</span>
+      </h1>
+      <p class="hero-description">
+        Experience the future of web design. Self-hosted, database-powered, 
+        and crafted with pixel-perfect precision. Welcome to Ultra.
+      </p>
+      <div class="hero-buttons">
+        <a href="#posts" class="btn btn-primary">
+          <span>Explore Now</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#features" class="btn btn-secondary">
+          <span>Learn More</span>
+        </a>
+      </div>
+      <div class="hero-stats" id="heroStats">
+        <div class="stat">
+          <span class="stat-number" data-target="0">0</span>
+          <span class="stat-label">Posts</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="0">0</span>
+          <span class="stat-label">Likes</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="0">0</span>
+          <span class="stat-label">Messages</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <div class="card-icon">💎</div>
+        <span>Premium Quality</span>
+      </div>
+      <div class="floating-card card-2">
+        <div class="card-icon">⚡</div>
+        <span>Lightning Fast</span>
+      </div>
+      <div class="floating-card card-3">
+        <div class="card-icon">🔒</div>
+        <span>Self Hosted</span>
+      </div>
+      <div class="hero-image">
+        <div class="glow-circle"></div>
+        <div class="center-logo">U</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="section-header">
+      <span class="section-badge">Features</span>
+      <h2 class="section-title">Why <span class="gradient-text">Ultra</span>?</h2>
+      <p class="section-description">Everything you need for an amazing web experience</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Stunning Design</h3>
+        <p>Glassmorphism, smooth animations, and beautiful gradients create an unforgettable visual experience.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗄️</div>
+        <h3>Database Powered</h3>
+        <p>SQLite integration for persistent data storage. Your content stays safe and accessible.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏠</div>
+        <h3>Self-Hosted</h3>
+        <p>Deploy anywhere you want. Your data, your rules. Full control over your website.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Fully Responsive</h3>
+        <p>Perfect on every device. From mobile to desktop, the experience is always amazing.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌙</div>
+        <h3>Dark Mode</h3>
+        <p>Easy on the eyes with automatic dark mode support. Browse comfortably day or night.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🐳</div>
+        <h3>Docker Ready</h3>
+        <p>One command deployment with Docker. Get up and running in seconds.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts Section -->
+  <section id="posts" class="posts-section">
+    <div class="section-header">
+      <span class="section-badge">Content</span>
+      <h2 class="section-title">Latest <span class="gradient-text">Posts</span></h2>
+      <p class="section-description">Discover amazing content from our community</p>
+    </div>
+    
+    <!-- Create Post Form -->
+    <div class="create-post-container">
+      <button class="create-post-toggle" id="createPostToggle">
+        <span class="toggle-icon">+</span>
+        <span>Create New Post</span>
+      </button>
+      <form class="create-post-form" id="createPostForm">
+        <div class="form-group">
+          <label for="postTitle">Title</label>
+          <input type="text" id="postTitle" name="title" placeholder="Enter your amazing title..." required>
+        </div>
+        <div class="form-group">
+          <label for="postAuthor">Author</label>
+          <input type="text" id="postAuthor" name="author" placeholder="Your name (optional)">
+        </div>
+        <div class="form-group">
+          <label for="postContent">Content</label>
+          <textarea id="postContent" name="content" placeholder="Share your thoughts..." rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <span>Publish Post</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="posts-grid" id="postsGrid">
+      <!-- Posts will be loaded dynamically -->
+      <div class="loading-skeleton">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <span class="section-badge">Get in Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="contact-description">
+          Have questions, ideas, or just want to say hi? We'd love to hear from you!
+        </p>
+        <div class="contact-features">
+          <div class="contact-feature">
+            <span class="cf-icon">⚡</span>
+            <span>Quick Response</span>
+          </div>
+          <div class="contact-feature">
+            <span class="cf-icon">💬</span>
+            <span>Friendly Support</span>
+          </div>
+          <div class="contact-feature">
+            <span class="cf-icon">🔐</span>
+            <span>Secure & Private</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" placeholder="Your message..." rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span>Send Message</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">Ultra</span>
+      </div>
+      <p class="footer-text">
+        Crafted with 💜 using Node.js, SQLite, and pure CSS magic.
+        <br>Self-hosted and proud of it.
+      </p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#posts">Posts</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">© 2024 Ultra Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
